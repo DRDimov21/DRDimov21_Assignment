@@ -47,14 +47,11 @@ public:
 };
 
 int main() {
-    BankAccount account("John Doe", "123456789012345", 1000.0);
+    BankAccount account("Dimitar Dimov", "123456", 1000.0);
     account.displayAccount();
 
-    cout << "\nDepositing $500...\n";
     account.deposit(500.0);
-    cout << "\nWithdrawing $200...\n";
     account.withdraw(200.0);
-    cout << "\nWithdrawing $2000...\n";
     account.withdraw(2000.0);
 
     return 0;
